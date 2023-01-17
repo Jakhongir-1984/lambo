@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Impact',sans-serif;
+  src: url(../fonts/impact.woff2);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -20,6 +25,7 @@ a {
 }
 
 body {
+  font-family: 'Roboto Condensed', sans-serif;
   color: #040404;
   font-size: 14px;
   line-height: 1.2;
@@ -28,6 +34,10 @@ body {
 
 .header {
   padding-top: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
 }
 
 .nav {
@@ -41,7 +51,40 @@ body {
   padding-top: 25px;
 }
 
-.menu-link {
-
+.menu-left {
+  padding-left: 25px;
 }
 
+.menu-right {
+  padding-right: 78px;
+}
+
+.menu-link {
+  color: #363636;
+  font-size: 16px;
+}
+
+.promo {
+  background-image: url(../images/promo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo__inner {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Impact',sans-serif;
+  font-weight: 400;
+  font-size: 76px;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-family: 'Impact',sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+}
